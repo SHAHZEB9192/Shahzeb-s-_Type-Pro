@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type-Pro</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="gradient">
+    <div id="container">
+        <div class="stats">
+            <p>Time: <span id="timerID">60s</span></p>
+            <p>Mistakes: <span id="mistakesID">0</span></p>
+        </div>
+        <div id="quote" style="
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -o-user-select: none;"
+        unselectable="on"
+        onselectstart="return false;"
+        onmousedown="return false;">
+        </div>
+        <textarea id="quote-input" rows="3" placeholder="Type Here"></textarea>
+        <button id="start" onclick="startTest()" >Start Test</button>
+        <button id="stop" onclick="displayResult()">Stop Test</button>
+        
+        <div class="result">
+            <p>Result:</p>
+            <div class="wrapper">
+                <p>Accuracy: <span id="accuracyID">0</span></p>
+                <p>Speed: <span id="speedID">0</span></p>
+            </div>
+            <div class="reset">
+                <button id="reset" onclick="window.onload()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>
