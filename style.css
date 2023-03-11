@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: rgb(190, 105, 105);
+    background-image: linear-gradient(to bottom, black , purple);
 }
 #container{
     background-color: antiquewhite;
