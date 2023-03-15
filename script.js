@@ -73,7 +73,7 @@ const displayResult = ()=>{
     userInput.disabled = true;
     document.querySelector(".result").style.display = "block"
     clearInterval(timer)
-    document.getElementById("container").style.height = "60vh"
+    document.getElementById("container").style.height = "65vh"
     let timeTaken = 1;
     let totalType = userInput.value.length;
     let correctType = userInput.value.length - mistakes
@@ -82,6 +82,7 @@ const displayResult = ()=>{
     }
     document.getElementById('speedID').innerText = (totalType/5/timeTaken).toFixed(2) + "wpm";
     document.getElementById('accuracyID').innerText = Math.round((correctType/totalType)*100) + "%";
+    document.getElementById('reset').style.display = "block"
 }
 
 const startTest = () => { //On clicking Start Button:
