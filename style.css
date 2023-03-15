@@ -111,11 +111,11 @@ button:hover{
     color: red;
 }
 @media screen and (max-width: 600px){
-    .container{
+    #container{
        width: 55%;
        height: 65%;
     }
-    #restart{
+    #reset{
        top: 88%;
        left: 50%;
     }
